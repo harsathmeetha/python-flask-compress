@@ -30,7 +30,7 @@ def compressFile():
     # return response
 
     outputImage.seek(0)
-    return send_file(outputImage, as_attachment=True)
+    return send_file(outputImage, mimetype='image/jpeg')
 
 
 if __name__ == "__main__":
